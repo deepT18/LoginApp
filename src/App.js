@@ -30,8 +30,8 @@ function App() {
         <form onSubmit={handleChange}>
           {err && <p className="Error">{err}</p>}
           <div>
-            <label htmlFor="username">UserName:</label>
-            <input type="text" id="username" value={userName} onChange={(e)=>{setUserName(e.target.value)}}/><br/>
+            <label htmlFor="username">Username:</label>
+            <input type="text" name="Username" id="username" value={userName} onChange={(e)=>{setUserName(e.target.value)}}/><br/>
             <label htmlFor="password">Password:</label>
             <input type="text" id="password" value={password} onChange={(e)=>{setPassword(e.target.value)}}/><br/>
             <button>Submit</button>
