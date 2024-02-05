@@ -24,11 +24,11 @@ function App() {
       <h1>Login Page</h1>
       {isLoggedIn?(
         <div>
-          <p>Welcome,{userName}!</p>
+          <p>Welcome,user!</p>
         </div>
       ):(
         <form onSubmit={handleChange}>
-          {err && <p className="Error">{err}</p>}
+          {err && <p className="Error">Invalid username or password</p>}
           <div>
             <label htmlFor="username">Username:</label>
             <input type="text" name="Username" id="username" value={userName} onChange={(e)=>{setUserName(e.target.value)}}/><br/>
