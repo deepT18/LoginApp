@@ -24,7 +24,7 @@ function App() {
       <h1>Login Page</h1>
       {isLoggedIn?(
         <div>
-          <p>Welcome,user!</p>
+          <p>Welcome, {userName}!</p>
         </div>
       ):(
         <form onSubmit={handleChange}>
